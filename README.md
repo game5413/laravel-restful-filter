@@ -224,3 +224,5 @@ Send me as much as a cup of tea worth in your country, so I'll have the energy t
         <img src="https://raw.githubusercontent.com/stefan-niedermann/paypal-donate-button/master/paypal-donate-button.png" width="150"/>
     </a>
 </div>
+
+Ethereum: 0x8a43C741519ff8447c033E9D0a49F94A6EB76047
