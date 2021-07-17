@@ -90,7 +90,6 @@ trait Filterable {
             $this->filterableColumns = [];
         }
         foreach ($this->filterableColumns as $column_key => $column) {
-            $column_key = preg_replace('/[.]/', '_', $column_key);
             if (array_key_exists($column_key, $columns)) {
                 $query = explode(':', $columns[$column_key]);
                 if (count($query) == 1) {
