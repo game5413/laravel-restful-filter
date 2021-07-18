@@ -88,7 +88,7 @@ class User extends Model
 
     public function role()
     {
-        $this->belongsTo(Role::class);
+        return $this->belongsTo(Role::class);
     }
     //rest of your code on model
 }
@@ -113,7 +113,7 @@ class User extends Model
 
     public function role()
     {
-        $this->belongsTo(Role::class);
+        return $this->belongsTo(Role::class);
     }
     //rest of your code on model
 }
