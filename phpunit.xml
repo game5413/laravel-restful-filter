@@ -1,0 +1,10 @@
+<phpunit bootstrap="tests/database/connection.php">
+    <testsuites>
+        <testsuite name="RESTful-Filter">
+            <directory suffix="Case.php">tests</directory>
+        </testsuite>
+    </testsuites>
+    <php>
+        <env name="faker_seed" value="5413"/>
+    </php>
+</phpunit>

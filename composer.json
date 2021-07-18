@@ -30,18 +30,22 @@
     },
     "autoload-dev": {
         "classmap": [
-            "src/"
+            "src/",
+            "tests/"
         ]
     },
     "require": {
-        "php": "^7.0|^8.0"
+        "php": "^5.5|^7.0|^8.0"
     },
     "require-dev": {
+        "php": "^7.0|^8.0",
         "phpunit/phpunit": "^9.5",
-        "mockery/mockery": "^1.4"
+        "fakerphp/faker": "^1.15",
+        "illuminate/database": "^8.50",
+        "laravel/legacy-factories": "^1.1"
     },
     "scripts": {
-        "test": "phpunit",
-        "test-coverage": "phpunit --coverage-html coverage"
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
     }
 }
