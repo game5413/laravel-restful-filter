@@ -3,6 +3,7 @@
 namespace Kemodev\RestfulFilter;
 
 use InvalidArgumentException;
+use PhpParser\Node\Expr\Instanceof_;
 
 trait Filterable {
     protected $searchOperations = [
@@ -119,7 +120,7 @@ trait Filterable {
         if (!$columns) {
             return $instance->orderBy($this->primaryKey, 'asc');
         }
-        if (!($columns instanceof String)) {
+        if (!is_string($columns)) {
             throw new InvalidArgumentException(
                 'Invalid sorting variables, expecting string got '.gettype($columns)
             );
